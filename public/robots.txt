@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ember-smoke.de/sitemap.xml

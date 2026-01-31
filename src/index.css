@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700;800&family=Source+Sans+3:wght@300;400;600;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0b0a09;
+  color: #f7f2ea;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
