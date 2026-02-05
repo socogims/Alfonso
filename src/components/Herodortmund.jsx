@@ -24,7 +24,7 @@ export default function HeroDortmund() {
           position: "absolute",
           inset: 0,
           background:
-            "radial-gradient(circle at left, rgba(255,106,33,0.18), transparent 60%)",
+            "radial-gradient(circle at left, rgba(169,28,26,0.18), transparent 60%)",
           pointerEvents: "none",
         }}
       />
@@ -92,12 +92,12 @@ export default function HeroDortmund() {
                     fontWeight: 800,
                     textTransform: "none",
                     boxShadow: {
-                      xs: "0 8px 22px rgba(255,106,33,0.45)",
-                      md: "0 14px 40px rgba(255,106,33,0.5)",
+                      xs: "0 8px 22px rgba(169,28,26,0.45)",
+                      md: "0 14px 40px rgba(169,28,26,0.5)",
                     },
                     "&:hover": {
                       transform: { md: "translateY(-2px)" },
-                      boxShadow: "0 20px 55px rgba(255,106,33,0.7)",
+                      boxShadow: "0 20px 55px rgba(169,28,26,0.7)",
                     },
                   }}
                 >
@@ -172,7 +172,7 @@ export default function HeroDortmund() {
                 width: 360,
                 height: 360,
                 background:
-                  "radial-gradient(circle, rgba(255,106,33,0.25), transparent 70%)",
+                  "radial-gradient(circle, rgba(169,28,26,0.25), transparent 70%)",
                 filter: "blur(60px)",
                 zIndex: -1,
               }}

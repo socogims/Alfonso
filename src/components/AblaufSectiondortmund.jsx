@@ -31,8 +31,8 @@ function StepCard({ number, icon, title, desc }) {
         overflow: "hidden",
         "&:hover": {
           transform: "translateY(-6px)",
-          background: "rgba(255,106,33,0.08)",
-          borderColor: "#ff6a21",
+          background: "rgba(169,28,26,0.08)",
+          borderColor: "#A91C1A",
         },
       }}
     >
@@ -50,7 +50,7 @@ function StepCard({ number, icon, title, desc }) {
         {number}
       </Typography>
 
-      <Box sx={{ color: "#ff6a21", mb: 2, fontSize: 32 }}>
+      <Box sx={{ color: "#A91C1A", mb: 2, fontSize: 32 }}>
         {icon}
       </Box>
 
@@ -164,7 +164,7 @@ Unser Service deckt alle Stadtteile Dortmunds ab – von der Innenstadt über H�
             }}
           >
             Auto verkaufen in{" "}
-            <Box component="span" sx={{ color: "#ff6a21" }}>
+            <Box component="span" sx={{ color: "#A91C1A" }}>
               Dortmund
             </Box>{" "}
             – so einfach geht’s
@@ -211,3 +211,4 @@ Unser Service deckt alle Stadtteile Dortmunds ab – von der Innenstadt über H�
     </Box>
   );
 }
+

@@ -22,7 +22,7 @@ function FeatureItem({ icon, title, desc }) {
           justifyContent: "center",
           mb: 1.5,
           gap: 1.5,
-          color: "#ff6a21",
+          color: "#A91C1A",
         }}
       >
         {icon}
@@ -68,7 +68,7 @@ export default function VorteileTimeline() {
             }}
           >
             Welche Fahrzeuge wir in{" "}
-            <Box component="span" sx={{ color: "#ff6a21" }}>
+            <Box component="span" sx={{ color: "#A91C1A" }}>
               Dortmund & Umgebung
             </Box>{" "}
             ankaufen
@@ -164,3 +164,4 @@ export default function VorteileTimeline() {
     </Box>
   );
 }
+

@@ -498,7 +498,7 @@ Halal • frisch • hausgemacht
             textTransform: "none",
             boxShadow: "0 4px 15px rgba(0,0,0,0.25)",
             "&:hover": {
-              bgcolor: "#f5b041",
+              bgcolor: "#A91C1A",
               transform: "scale(1.05)",
               transition: "all 0.3s ease",
             },

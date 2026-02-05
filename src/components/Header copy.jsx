@@ -119,11 +119,11 @@ export default function Header() {
                 fontSize: "0.95rem",
                 px: 3.5,
                 py: 1.2,
-                boxShadow: "0 8px 25px rgba(255,106,33,0.45)",
+                boxShadow: "0 8px 25px rgba(169,28,26,0.45)",
                 transition: "all 0.3s ease",
                 "&:hover": {
                   transform: "translateY(-1px)",
-                  boxShadow: "0 12px 35px rgba(255,106,33,0.65)",
+                  boxShadow: "0 12px 35px rgba(169,28,26,0.65)",
                 },
               }}
             >
@@ -191,3 +191,4 @@ export default function Header() {
     </>
   );
 }
+

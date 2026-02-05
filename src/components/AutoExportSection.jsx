@@ -8,7 +8,7 @@ export default function AutoExportSection() {
         <Typography
           variant="h2"
           sx={{
-            color: "#ff6a21",
+            color: "#A91C1A",
             fontWeight: 900,
             mb: { xs: 3, sm: 4, md: 5 },
             textAlign: "center",
@@ -75,7 +75,7 @@ export default function AutoExportSection() {
 }
 
 const h3Responsive = {
-  color: "#ff6a21",
+  color: "#A91C1A",
   fontWeight: 800,
   mt: { xs: 5, sm: 6, md: 7 },
   mb: { xs: 2, sm: 3, md: 3 },
@@ -88,3 +88,4 @@ const pResponsive = {
   lineHeight: { xs: 1.6, sm: 1.8, md: 1.9 },
   mb: 3,
 };
+

@@ -64,16 +64,34 @@ export default function Header() {
   }}
 >
   <Box
-    component="img"
-    src="/logo2.png"
-    alt="Ember & Smoke Grill‑Auto"
     sx={{
-      height: { xs: 36, md: 42 },   // <-- Logo-Größe im Header
-      width: "auto",
+      display: "inline-flex",
+      alignItems: "center",
+      justifyContent: "center",
+      bgcolor: "transparent",
+      border: "none",
+      borderRadius: 0,
+      px: { xs: 0.6, md: 0.8 },
+      py: { xs: 0.4, md: 0.5 },
+      boxShadow: "none",
       transition: "transform 0.3s ease",
-      "&:hover": { transform: "scale(1.05)" },
+      "&:hover": { transform: "translateY(-1px) scale(1.02)" },
     }}
-  />
+  >
+    <Box
+      component="img"
+      src="/logo4.png"
+      alt="Ember & Smoke Grill‑Auto"
+      sx={{
+        height: { xs: 80, md: 96 },
+        width: "auto",
+        display: "block",
+        transform: "scale(2)",
+        transformOrigin: "center",
+        filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.55))",
+      }}
+    />
+  </Box>
 </Box>
 
 
@@ -153,7 +171,7 @@ export default function Header() {
                       py: 1,
                       borderRadius: 1,
                       fontWeight: 600,
-                      "&:hover": { bgcolor: "rgba(255,106,33,0.15)" },
+                      "&:hover": { bgcolor: "rgba(169,28,26,0.15)" },
                     }}
                   >
                     {subItem.name}
@@ -172,7 +190,7 @@ export default function Header() {
                       color: "#fff",
                       px: 2,
                       py: 1,
-                      "&:hover": { bgcolor: "rgba(255,106,33,0.1)" },
+                      "&:hover": { bgcolor: "rgba(169,28,26,0.1)" },
                     }}
                   >
                     {subItem.name}
@@ -216,8 +234,8 @@ export default function Header() {
                 fontSize: "0.95rem",
                 px: 3.5,
                 py: 1.2,
-                boxShadow: "0 8px 25px rgba(255,106,33,0.45)",
-                "&:hover": { transform: "translateY(-1px)", boxShadow: "0 12px 35px rgba(255,106,33,0.65)" },
+                boxShadow: "0 8px 25px rgba(169,28,26,0.45)",
+                "&:hover": { transform: "translateY(-1px)", boxShadow: "0 12px 35px rgba(169,28,26,0.65)" },
               }}
             >
               Anfrage senden
@@ -286,19 +304,37 @@ export default function Header() {
 >
   {/* HEADER: Logo + Sprache */}
   <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mb: 6 }}>
+  <Box
+    onClick={() => window.location.href = "/"}
+    sx={{
+      display: "inline-flex",
+      alignItems: "center",
+      justifyContent: "center",
+      bgcolor: "transparent",
+      border: "none",
+      borderRadius: 0,
+      px: 0.8,
+      py: 0.6,
+      boxShadow: "none",
+      cursor: "pointer",
+      transition: "transform 0.3s",
+      "&:hover": { transform: "translateY(-1px) scale(1.02)" },
+    }}
+  >
     <Box
       component="img"
-      src="/logo2.png"
+      src="/logo4.png"
       alt="Ember & Smoke Grill‑Auto"
       sx={{
-        height: 60,
+        height: 80,
         width: "auto",
-        cursor: "pointer",
-        transition: "transform 0.3s",
-        "&:hover": { transform: "scale(1.05)" },
+        display: "block",
+        transform: "scale(1.15)",
+        transformOrigin: "center",
+        filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.55))",
       }}
-      onClick={() => window.location.href = "/"}
     />
+  </Box>
 
   </Box>
 
@@ -351,3 +387,4 @@ export default function Header() {
     </>
   );
 }
+

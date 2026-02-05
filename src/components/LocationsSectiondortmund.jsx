@@ -100,7 +100,7 @@ export default function NRWLocationsSection() {
               px: 2.5,
               py: 1.2,
               borderRadius: 2,
-              background: "rgba(255,106,33,0.15)",
+              background: "rgba(169,28,26,0.15)",
               border: "1px solid rgba(255,255,255,0.1)",
               display: "flex",
               alignItems: "center",
@@ -137,3 +137,4 @@ export default function NRWLocationsSection() {
     </Box>
   );
 }
+

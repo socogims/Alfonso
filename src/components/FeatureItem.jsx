@@ -76,7 +76,16 @@ export default function MenuHighlightsSection() {
               fontWeight: 700,
             }}
           />
-          <Typography variant="h2" component="h2" sx={{ color: "#fff", fontWeight: 800 }}>
+          <Typography
+            variant="h2"
+            component="h2"
+            sx={{
+              color: "#fff",
+              fontWeight: 800,
+              fontSize: { xs: "1.8rem", sm: "2.4rem", md: "3rem" },
+              lineHeight: { xs: 1.15, md: 1.1 },
+            }}
+          >
             Unsere <Box component="span" sx={{ color: "primary.main" }}>Streetfood‑Highlights</Box>
           </Typography>
           <Typography sx={{ color: "rgba(255,255,255,0.7)", mt: 2, maxWidth: 760, mx: "auto" }}>

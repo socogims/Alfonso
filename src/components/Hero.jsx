@@ -192,7 +192,7 @@ export default function Hero() {
           textTransform: "uppercase",
         }}
       >
-        Ember & Smoke Grill‑Auto
+        Prince of Philly 
       </Typography>
     </Box>
   );

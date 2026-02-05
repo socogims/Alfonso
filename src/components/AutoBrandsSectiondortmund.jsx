@@ -34,7 +34,7 @@ export default function AutoBrandsSection() {
           width: 400,
           height: 400,
           background:
-            "radial-gradient(circle, rgba(255,106,33,0.25), transparent 70%)",
+            "radial-gradient(circle, rgba(169,28,26,0.25), transparent 70%)",
           filter: "blur(100px)",
         }}
       />
@@ -48,7 +48,7 @@ export default function AutoBrandsSection() {
           width: 500,
           height: 500,
           background:
-            "radial-gradient(circle, rgba(255,106,33,0.18), transparent 70%)",
+            "radial-gradient(circle, rgba(169,28,26,0.18), transparent 70%)",
           filter: "blur(120px)",
         }}
       />
@@ -123,7 +123,7 @@ export default function AutoBrandsSection() {
                   inset: 0,
                   borderRadius: 4,
                   background:
-                    "linear-gradient(135deg, rgba(255,106,33,0.35), transparent 60%)",
+                    "linear-gradient(135deg, rgba(169,28,26,0.35), transparent 60%)",
                   opacity: 0,
                   transition: "opacity 0.4s ease",
                 },
@@ -152,3 +152,4 @@ export default function AutoBrandsSection() {
     </Box>
   );
 }
+

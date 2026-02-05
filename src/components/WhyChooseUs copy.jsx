@@ -68,7 +68,7 @@ export default function PourquoiChoisir() {
                   transition: "all 0.4s ease",
                   "&:hover": {
                     transform: "translateY(-8px)",
-                    boxShadow: "0 18px 50px rgba(255,106,33,0.35)",
+                    boxShadow: "0 18px 50px rgba(169,28,26,0.35)",
                   },
                 }}
               >
@@ -93,11 +93,11 @@ export default function PourquoiChoisir() {
                       mx: "auto",
                       mb: 2,
                       borderRadius: "50%",
-                      bgcolor: "rgba(255,106,33,0.15)",
+                      bgcolor: "rgba(169,28,26,0.15)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      color: "#ff6a21",
+                      color: "#A91C1A",
                       fontSize: 28,
                     }}
                   >
@@ -145,3 +145,4 @@ export default function PourquoiChoisir() {
     </Box>
   );
 }
+

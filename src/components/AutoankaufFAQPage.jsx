@@ -169,7 +169,7 @@ export default function AutoankaufFAQPage() {
               sx={{
                 textAlign: "center",
                 fontWeight: 800,
-                color: "#ff6a21",
+                color: "#A91C1A",
                 mb: 2,
                 fontSize: { xs: "1.25rem", sm: "1.5rem", md: "2rem", lg: "2.25rem" },
               }}
@@ -200,7 +200,7 @@ export default function AutoankaufFAQPage() {
                 }}
               >
                 <AccordionSummary
-                  expandIcon={<ExpandMoreIcon sx={{ color: "#ff6a21" }} />}
+                  expandIcon={<ExpandMoreIcon sx={{ color: "#A91C1A" }} />}
                 >
                   <Typography sx={{ fontWeight: 600, fontSize: { xs: "0.95rem", sm: "1rem", md: "1.1rem" } }}>
                     {item.q}
@@ -219,3 +219,4 @@ export default function AutoankaufFAQPage() {
     </Box>
   );
 }
+

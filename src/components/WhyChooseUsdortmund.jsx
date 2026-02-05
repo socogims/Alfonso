@@ -58,7 +58,7 @@ export default function VorteileWarumWirDortmund() {
             }}
           >
             Warum Autoankauf in{" "}
-            <Box component="span" sx={{ color: "#ff6a21" }}>
+            <Box component="span" sx={{ color: "#A91C1A" }}>
               Dortmund
             </Box>{" "}
             mit Fairankauf.de?
@@ -119,7 +119,7 @@ export default function VorteileWarumWirDortmund() {
                   transition: "all 0.4s ease",
                   "&:hover": {
                     transform: "translateY(-8px)",
-                    boxShadow: "0 18px 50px rgba(255,106,33,0.35)",
+                    boxShadow: "0 18px 50px rgba(169,28,26,0.35)",
                   },
                 }}
               >
@@ -149,7 +149,7 @@ export default function VorteileWarumWirDortmund() {
                       bottom: 0,
                       left: 0,
                       right: 0,
-                      bgcolor: "#ff6a21",
+                      bgcolor: "#A91C1A",
                       py: 1.6,
                       px: 2,
                     }}
@@ -176,11 +176,11 @@ export default function VorteileWarumWirDortmund() {
                       mx: "auto",
                       mb: 2,
                       borderRadius: "50%",
-                      bgcolor: "rgba(255,106,33,0.15)",
+                      bgcolor: "rgba(169,28,26,0.15)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      color: "#ff6a21",
+                      color: "#A91C1A",
                       fontSize: 28,
                     }}
                   >
@@ -205,3 +205,4 @@ export default function VorteileWarumWirDortmund() {
     </Box>
   );
 }
+
