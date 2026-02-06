@@ -60,7 +60,7 @@ export default function Header() {
               src="/logo4.png"
               alt="Philly Cheesesteak & Smashburger"
               sx={{
-                height: { xs: 64, md: 76 },
+                height: { xs: 80, md: 96 },
                 width: "auto",
                 display: "block",
                 filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.55))",
