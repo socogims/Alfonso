@@ -6,6 +6,7 @@ import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
 import AGBSection from "./pages/AGBSection";
 import ContactSection from "./pages/ContactSection";
+import Catering from "./pages/Catering";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/datenschutz" element={<Datenschutz />} />
           <Route path="/agb" element={<AGBSection />} />
           <Route path="/kontakt" element={<ContactSection />} />
+          <Route path="/catering" element={<Catering />} />
         </Routes>
       </Router>
     </ThemeProvider>

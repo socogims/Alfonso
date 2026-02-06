@@ -1,20 +1,21 @@
 import { Helmet } from "react-helmet";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import CateringPDFSection from "../components/CateringPDFSection";
 import WhyChooseUs from "../components/WhyChooseUs";
-import FeatureItem from "../components/FeatureItem";
 import EventsSection from "../components/EventsSection";
+import CateringHintSection from "../components/CateringHintSection";
+import AboutSection from "../components/AboutSection";
 import ContactSection from "../components/ContactSection";
 import LocationsSection from "../components/LocationsSection";
 import Footer from "../components/Footer";
 
 export default function Home() {
-  const metaTitle = "Ember & Smoke Grill‑Auto – Mobile Feuerküche in Bochum";
+  const metaTitle =
+    "PHILLY CHEESESTEAK & SMASHBURGER | Foodtruck & Catering aus Castrop-Rauxel";
   const metaDescription =
-    "Mobile Grillküche für Festivals, Firmenfeiern und private Events – plus fester Stand in Bochum. Feuer, Rauch und Streetfood vom Feinsten.";
-  const metaImage = "https://ember-smoke.de/images/grillhaus.jpg";
-  const metaUrl = "https://ember-smoke.de";
+    "Foodtruck in Castrop-Rauxel: Philly Cheesesteaks, Smashburger und Beilagen – frisch vom Grill. Buchbar für Events, Festivals und Feiern.";
+  const metaImage = "/grill-1.jpg";
+  const metaUrl = "http://princeofphilly.com";
 
   return (
     <>
@@ -38,33 +39,31 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "FoodTruck",
             "@id": metaUrl + "#restaurant",
-            name: "Ember & Smoke Grill‑Auto",
+            name: "PHILLY CHEESESTEAK & SMASHBURGER",
             url: metaUrl,
             image: metaImage,
-            servesCuisine: ["Grill", "BBQ", "Streetfood"],
+            servesCuisine: ["Streetfood", "Cheesesteak", "Burger"],
             priceRange: "€€",
-            telephone: "+49 231 1234567",
             address: {
               "@type": "PostalAddress",
-              streetAddress: "Beispielstraße 12",
-              addressLocality: "Bochum",
-              postalCode: "44787",
+              streetAddress: "Kupferstraße 3",
+              addressLocality: "Castrop-Rauxel",
+              postalCode: "44577",
               addressCountry: "DE",
             },
-            areaServed: ["Bochum", "Ruhrgebiet", "NRW"],
-            openingHours: ["Do-Sa 16:00-22:00", "So 12:00-20:00"],
+            areaServed: ["Castrop-Rauxel", "Ruhrgebiet", "NRW"],
           })}
         </script>
       </Helmet>
 
       <Header />
       <Hero />
-      <CateringPDFSection />
-      <WhyChooseUs />
-      <FeatureItem />
-      <EventsSection />
-      <ContactSection />
       <LocationsSection />
+      <WhyChooseUs />
+      <EventsSection />
+      <CateringHintSection />
+      <AboutSection />
+      <ContactSection />
       <Footer />
     </>
   );

@@ -1,24 +1,15 @@
-import {
-  Box,
-  Container,
-  Grid,
-  Typography,
-  IconButton,
-  Stack,
-  Link,
-} from "@mui/material";
+import { Box, Container, Grid, Typography, Stack, Link } from "@mui/material";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
 
 export default function Footer() {
   const quickLinks = [
-    { name: "Catering", href: "#catering" },
-    { name: "Speisekarte", href: "#menu" },
-    { name: "Grill‑Auto", href: "#experience" },
-    { name: "Events", href: "#events" },
     { name: "Standort", href: "#standort" },
+    { name: "Angebot", href: "#angebot" },
+    { name: "Events", href: "#events" },
+    { name: "Über uns", href: "#ueber-uns" },
+    { name: "Kontakt", href: "#kontakt" },
+    { name: "Catering", href: "/catering" },
   ];
 
   const infoLinks = [
@@ -26,6 +17,9 @@ export default function Footer() {
     { name: "Datenschutz", href: "/datenschutz" },
     { name: "AGB", href: "/agb" },
   ];
+
+  const phone = "0176311298926";
+  const email = "alfonso.jordao.pinto@googlemail.com";
 
   return (
     <Box
@@ -38,7 +32,7 @@ export default function Footer() {
         borderTop: "1px solid rgba(255,255,255,0.08)",
       }}
       itemScope
-      itemType="https://schema.org/Restaurant"
+      itemType="https://schema.org/FoodTruck"
     >
       <Container maxWidth="lg">
         <Grid
@@ -58,10 +52,11 @@ export default function Footer() {
             }}
           >
             <Typography sx={{ fontWeight: 800, mb: 2, color: "primary.main" }}>
-              Ember & Smoke Grill‑Auto
+              Philly Cheesesteak & Smashburger
             </Typography>
             <Typography sx={{ color: "rgba(255,255,255,0.7)" }}>
-              Mobile Feuerküche für Festivals und Events – plus fester Stand in Bochum.
+              Foodtruck & Catering aus Castrop-Rauxel. Philly Cheesesteaks, Smashburger
+              und Beilagen – frisch vom Grill.
             </Typography>
           </Grid>
 
@@ -107,26 +102,12 @@ export default function Footer() {
             <Stack spacing={2} alignItems={{ xs: "center", md: "flex-start" }}>
               <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                 <PhoneIcon sx={{ color: "primary.main" }} />
-                <Typography itemProp="telephone">+49 231 1234567</Typography>
+                <Typography itemProp="telephone">{phone}</Typography>
               </Box>
               <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                 <EmailIcon sx={{ color: "primary.main" }} />
-                <Typography itemProp="email">hallo@ember-smoke.de</Typography>
+                <Typography itemProp="email">{email}</Typography>
               </Box>
-              <Stack direction="row" spacing={1}>
-                <IconButton
-                  aria-label="Instagram"
-                  sx={{ bgcolor: "rgba(255,255,255,0.08)", color: "#fff" }}
-                >
-                  <InstagramIcon />
-                </IconButton>
-                <IconButton
-                  aria-label="Facebook"
-                  sx={{ bgcolor: "rgba(255,255,255,0.08)", color: "#fff" }}
-                >
-                  <FacebookIcon />
-                </IconButton>
-              </Stack>
             </Stack>
           </Grid>
         </Grid>
@@ -142,7 +123,7 @@ export default function Footer() {
           }}
         >
           <Typography component="p" sx={{ mb: 1 }}>
-            © {new Date().getFullYear()} Ember & Smoke Grill‑Auto. Alle Rechte vorbehalten.
+            © {new Date().getFullYear()} Philly Cheesesteak & Smashburger. Alle Rechte vorbehalten.
           </Typography>
 
           <Stack direction="row" spacing={2} justifyContent="center" flexWrap="wrap">

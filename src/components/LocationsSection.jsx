@@ -1,8 +1,7 @@
 import { Box, Container, Typography, Grid, Stack, Chip } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import LocalParkingIcon from "@mui/icons-material/LocalParking";
-import TrainIcon from "@mui/icons-material/Train";
+import InfoIcon from "@mui/icons-material/Info";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 export default function LocationSection() {
   return (
@@ -18,7 +17,7 @@ export default function LocationSection() {
       <Container maxWidth="lg">
         <Box sx={{ textAlign: "center", mb: 8 }}>
           <Chip
-            label="Anfahrt & Öffnungszeiten"
+            label="Standort & Öffnungszeiten"
             sx={{
               mb: 2,
               color: "primary.main",
@@ -27,11 +26,11 @@ export default function LocationSection() {
             }}
           />
           <Typography variant="h2" component="h2" sx={{ fontWeight: 800 }}>
-            Fester Stand in <Box component="span" sx={{ color: "primary.main" }}>Bochum</Box>
+            Kupferstraße 3 <Box component="span" sx={{ color: "primary.main" }}>Castrop-Rauxel</Box>
           </Typography>
-          <Typography sx={{ color: "rgba(255,255,255,0.7)", mt: 2, maxWidth: 720, mx: "auto" }}>
-            Unser Basis‑Stand ist in Bochum. Von hier aus starten wir auch zu Festivals
-            und Events in der Region.
+          <Typography sx={{ color: "rgba(255,255,255,0.7)", mt: 2, maxWidth: 760, mx: "auto" }}>
+            Der Wagen steht hier, wenn wir nicht auf Veranstaltungen unterwegs sind.
+            Feste Tage und Zeiten geben wir regelmäßig online bekannt.
           </Typography>
         </Box>
 
@@ -47,22 +46,18 @@ export default function LocationSection() {
               }}
             >
               <Typography sx={{ fontWeight: 700, mb: 2 }}>
-                Ember & Smoke Grill‑Auto – Bochum
+                Standort
               </Typography>
               <Stack spacing={2}>
                 <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
                   <LocationOnIcon sx={{ color: "primary.main" }} />
-                  <Typography>
-                    Beispielstraße 12, 44787 Bochum
-                  </Typography>
+                  <Typography>Kupferstraße 3, 44577 Castrop-Rauxel</Typography>
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                  <AccessTimeIcon sx={{ color: "primary.main" }} />
-                  <Box>
-                    <Typography>Mo–Do: 16:00–22:00</Typography>
-                    <Typography>Fr–Sa: 16:00–23:30</Typography>
-                    <Typography>So: 12:00–21:30</Typography>
-                  </Box>
+                  <InfoIcon sx={{ color: "primary.main" }} />
+                  <Typography>
+                    Der Wagen steht hier, wenn wir nicht auf Veranstaltungen sind.
+                  </Typography>
                 </Box>
               </Stack>
             </Box>
@@ -79,25 +74,22 @@ export default function LocationSection() {
               }}
             >
               <Typography sx={{ fontWeight: 700, mb: 2 }}>
-                Anfahrt & Tipps
+                Angebot vor Ort
               </Typography>
               <Stack spacing={2}>
-                <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                  <LocalParkingIcon sx={{ color: "primary.main" }} />
-                  <Typography>
-                    Parkplätze im Innenhof und Parkhaus 150m entfernt.
-                  </Typography>
-                </Box>
-                <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                  <TrainIcon sx={{ color: "primary.main" }} />
-                  <Typography>
-                    Haltestelle „Stadtmitte“ in 3 Minuten zu Fuß erreichbar.
-                  </Typography>
-                </Box>
-                <Typography sx={{ color: "rgba(255,255,255,0.7)" }}>
-                  Gruppen ab 8 Personen? Ruf uns kurz an – wir reservieren die passende
-                  Tafel.
-                </Typography>
+                {[
+                  "Abholung",
+                  "Lieferung aus Castrop-Rauxel",
+                  "Events & Festivals",
+                ].map((item) => (
+                  <Box
+                    key={item}
+                    sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}
+                  >
+                    <CheckCircleIcon sx={{ color: "primary.main" }} />
+                    <Typography>{item}</Typography>
+                  </Box>
+                ))}
               </Stack>
             </Box>
           </Grid>

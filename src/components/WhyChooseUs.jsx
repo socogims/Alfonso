@@ -1,36 +1,42 @@
-import { Box, Container, Typography, Grid } from "@mui/material";
-import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
-import RestaurantMenuIcon from "@mui/icons-material/RestaurantMenu";
-import GrassIcon from "@mui/icons-material/Grass";
-import LocalBarIcon from "@mui/icons-material/LocalBar";
+import { Box, Container, Typography, Grid, Chip } from "@mui/material";
+import LunchDiningIcon from "@mui/icons-material/LunchDining";
+import RestaurantIcon from "@mui/icons-material/Restaurant";
+import LocalDiningIcon from "@mui/icons-material/LocalDining";
+import DeliveryDiningIcon from "@mui/icons-material/DeliveryDining";
+import EventIcon from "@mui/icons-material/Event";
 
-const highlights = [
+const offers = [
   {
-    icon: <LocalFireDepartmentIcon />,
-    title: "Mobile Feuerküche",
-    desc: "Unser Grill‑Auto bringt echtes Feuer auf Festivals, Firmenfeiern und Privatevents.",
+    icon: <LunchDiningIcon />,
+    title: "Philly Cheesesteaks",
+    desc: "Klassiker mit heißem Fleisch, Käse und weichem Brot.",
   },
   {
-    icon: <RestaurantMenuIcon />,
-    title: "Handwerk am Grill",
-    desc: "Scharf angebratene Cuts, Rauch und Glut – alles live und frisch vor Ort.",
+    icon: <RestaurantIcon />,
+    title: "Smashburger",
+    desc: "Kross, saftig, heiß vom Grill – ohne Umwege.",
   },
   {
-    icon: <GrassIcon />,
-    title: "Regional & ehrlich",
-    desc: "Zutaten aus der Region, saisonale Beilagen und hausgemachte Saucen.",
+    icon: <LocalDiningIcon />,
+    title: "Beilagen",
+    desc: "Einfach, ehrlich, genau das, was dazu passt.",
   },
   {
-    icon: <LocalBarIcon />,
-    title: "Fester Stand in Bochum",
-    desc: "Wer uns nicht auf Tour trifft, findet uns am festen Standort in Bochum.",
+    icon: <DeliveryDiningIcon />,
+    title: "Lieferung",
+    desc: "Lieferung aus Castrop-Rauxel – je nach Verfügbarkeit.",
+  },
+  {
+    icon: <EventIcon />,
+    title: "Buchbar für Events",
+    desc: "Für Feiern, Firmen und Food-Events.",
   },
 ];
 
 export default function WhyChooseUs() {
   return (
     <Box
-      id="experience"
+      id="angebot"
       component="section"
       sx={{
         py: { xs: 10, md: 16 },
@@ -40,22 +46,30 @@ export default function WhyChooseUs() {
     >
       <Container maxWidth="lg">
         <Box sx={{ textAlign: "center", mb: 8 }}>
+          <Chip
+            label="Unser Angebot"
+            sx={{
+              mb: 2,
+              color: "primary.main",
+              bgcolor: "rgba(122,31,27,0.12)",
+              fontWeight: 700,
+            }}
+          />
           <Typography
             variant="h2"
             component="h2"
             sx={{ fontWeight: 800, color: "#fff", mb: 2 }}
           >
-            Warum unser <Box component="span" sx={{ color: "primary.main" }}>Grill‑Auto</Box>?
+            Streetfood ohne <Box component="span" sx={{ color: "primary.main" }}>Schnickschnack</Box>
           </Typography>
           <Typography sx={{ color: "rgba(255,255,255,0.7)", maxWidth: 720, mx: "auto" }}>
-            Feuer, Qualität und echtes Handwerk. Ob Festival, Event oder fester Stand
-            in Bochum – wir bringen Grillgenuss mit Charakter.
+            Gutes Streetfood, frisch gemacht. Kein Theater – dafür stehen wir.
           </Typography>
         </Box>
 
         <Grid container spacing={4}>
-          {highlights.map((item) => (
-            <Grid item xs={12} sm={6} md={3} key={item.title}>
+          {offers.map((item) => (
+            <Grid item xs={12} sm={6} md={4} key={item.title}>
               <Box
                 sx={{
                   height: "100%",
@@ -68,7 +82,7 @@ export default function WhyChooseUs() {
                   "&:hover": {
                     transform: "translateY(-6px)",
                     borderColor: "primary.main",
-                  background: "rgba(122,31,27,0.08)",
+                    background: "rgba(122,31,27,0.08)",
                   },
                 }}
               >
